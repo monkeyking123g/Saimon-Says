@@ -46,12 +46,13 @@ class Colors(games.Sprite):
 class Player(games.Sprite):
     """Creazione Player e keyboard """
     Color = []
+    DISTANZ = 0
     COLOR_LIST = []
     COLOR_DELLY = 20
     image = games.load_image("player.bmp")
     def __init__(self, x, y, game):
         super(Player, self).__init__(image = Player.image, x = x, y = y)
-        self.distn = Player.Distanza
+        self.distn = Player.DISTANZ
         self.collor_wait = 0
         self.color_list = Player.COLOR_LIST
         self.game = game
